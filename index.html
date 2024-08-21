@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal web-site</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon-32x32.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- EMAIL JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "CYJAtdENekvkkidDE",
+            });
+        })();
+    </script>
+    <script src="email.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="nav-menu">
+            <ul class="navbar">
+                <li class="logo">
+                    <div id="logo"><a href="#">GV</a></div>
+                </li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#info" class="nav-link">Info</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contatti" class="nav-link">Contatti</a></li>
+                    <label for="check" class="nav-toggle" id="close-menu"><i class="ri-close-large-line"></i></label>
+                </span>
+                <label for="check" class="nav-toggle" id="open-menu"><i class="ri-menu-line"></i> </label>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION HOME -->
+        <section id="home" class="section">
+            <div class="container-corpo">
+                <div class="corpo scroll-scale">
+                    <div class="dati">
+                        <h1>Ciao! Mi chiamo <span id="name">Gianluca&nbsp;Valenzi</span></h1>
+                        <h3>Sono un <span> Web Developer</span> in cerca di lavoro</h3>
+                        <a href="https://www.linkedin.com/in/gianluca-valenzi-319535324/" target="_blank">
+                            <img id="linkedin"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+                        </a>
+                        <a href="https://github.com/GianlucaValenziWeb" target="_blank">
+                            <i id="git-hub" class="devicon-github-original"></i>
+                        </a>
+                    </div>
+
+                    <div class="container-avatar heartbeat scroll-scale">
+                        <img id="myavatar" src="images/avatar-blu.png" alt="avatar">
+
+                    </div>
+                </div>
+
+                <a href="#info" class="piede scroll-scale">
+                    <div class="arrow-down">
+                        <i class="ri-arrow-down-fill"></i>
+                    </div>
+                    <span class="work">
+                        Scopri di più
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION INFO -->
+        <section id="info" class="section scroll-scale">
+            <div class="container-info">
+                <div class="container-left">
+                    <div class="corpo-info">
+                        <h3>Perché scegliere <span>me?</span></h3>
+                        <p>
+                            Sono un giovane web developer, appena uscito da un corso di formazione.
+                            Sono entusiasta di mettere in pratica le mie competenze e di contribuire attivamente
+                            alle esigenze dei miei clienti. La mia determinazione, unita alla voglia di imparare e
+                            crescere,
+                            mi rendono un candidato ideale per chi cerca una risorsa affidabile e motivata.
+                            Sono pronto ad affrontare nuove sfide e a dimostrare il mio valore attraverso risultati
+                            concreti
+                            e un impegno costante.
+                        </p>
+                    </div>
+
+                    <div class="piede-info">
+                        <div class="container-button">
+                            <button id="btn-exp" class="tap-button active" data-target="container-1">ESPERIENZE</button>
+                            <button id="btn-skills" class="tap-button" data-target="container-2">SKILLS</button>
+                            <button id="btn-about" class="tap-button" data-target="container-3">ALTRE
+                                INFORMAZIONI</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXP -->
+                <div class="container-right">
+                    <div id="container-1" class="tab-content active">
+                        <h3>Esperienze</h3>
+                        <div class="p-exp">
+                            <p>Ho frequentato la scuola superiore di amministrazione finanza e marketing.
+                                Dopo il diploma inizio a esplorare il mondo del web in modo
+                                autodidatta e, spinto dalla crescente passione, ho intrapreso un
+                                corso di Web Developer presso il CEFI, un ente accreditato della Regione Lazio. Questo
+                                percorso mi ha fornito 256 ore di formazione e
+                                120 ore di tirocinio, offrendomi una base solida per iniziare a muovere i primi passi in
+                                questo nuovo mondo.
+                            </p>
+                        </div>
+
+                        <div class="container-exp">
+                            <div class="left-box">
+                                <h4 class="year">2023</h4>
+                                <h4 class="title">Diploma in AFM</h4>
+                            </div>
+                            <div class="right-box">
+                                <h4 class="year">2024</h4>
+                                <h4 class="title" id="corso">Corso CEFI Web-Developer</h4>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-button-container">
+                            <a href="file/Curriculum Gianluca Valenzi.pdf" target="_blank"><button id="download-cv"
+                                    class="download-button"> DOWNLOAD CV</button></a>
+                        </div>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div id="container-2" class="tab-content">
+                        <h3>Skills</h3>
+                        <div class="p-skills">
+                            <p>Ho esperienza in sviluppo web front-end e back-end. <br>
+                                Di sotto puoi trovare i linguaggi studiati al corso
+                                e da me approfonditi, con in allegato il certificato
+                                che attesta le ore di frequenza per ogni linguaggio:
+                            </p>
+                        </div>
+
+                        <div class="container-skills">
+                            <div class="skills">
+                                <div class="sub-box" id="sub-html">
+                                    <a href="file/ATTESTATO-HTML-CSS.pdf" target="_blank">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                        <span>HTML</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-css">
+                                    <a href="file/ATTESTATO-HTML-CSS.pdf" target="_blank"></a>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                    <span>CSS</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-js">
+                                    <a href="file/ATTESTATO -JS-JQ.pdf" target="_blank">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                        <span>JAVASCRIPT</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-PHP">
+                                    <a href="file/ATTESTATO-PHP..pdf" target="_blank">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                        <span>PHP</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-jq">
+                                    <a href="file/ATTESTATO -JS-JQ.pdf" target="_blank">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+                                        <span>JQUERY</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-ph">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
+                                    <span>PHOTOSHOP</span>
+                                </div>
+                                <div class="sub-box" id="sub-wp">
+                                    <a href="file/ATTESTATO-WP.pdf" target="_blank">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" />
+                                        <span>WORDPRESS</span>
+                                    </a>
+                                </div>
+                                <div class="sub-box" id="sub-sic">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                    <span>MYSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT -->
+                    <div id="container-3" class="tab-content">
+                        <h3>Altre informazioni:</h3>
+                        <div class="p-about">
+                            <p>Altre informazioni su di me che ti possono tornare utili:</p>
+                        </div>
+
+                        <div class="container-about">
+                            <div class="about">
+                                <div class="column">
+                                    <span class="dom">Nome: <span class="risp">Gianluca</span></span>
+                                    <span class="dom">Cognome: <span class="risp">Valenzi</span></span>
+                                    <span class="dom">Età: <span class="risp">20 anni</span></span>
+                                    <span class="dom" id="dom1">Lingua: <span class="risp">Italiano</span></span>
+                                </div>
+                                <div class="column">
+                                    <span class="dom">Freelance: <a href="#footer"><span id="free-s"
+                                                class="risp">Disponibile</span></span></a>
+                                    <span class="dom">Città: <span class="risp">Roma, Italia</span></span>
+                                    <span class="dom">Titolo di studio: <span class="risp">Diploma</span></span>
+                                    <span class="dom">Email: <a href="#contatti"><span id="email-s" class="risp">
+                                                gianlucavalenziweb
+                                                <br>@gmail.com</span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- SECTION PORTFOLIO -->
+        <section id="portfolio" class="section scroll-scale">
+            <div class="container-portfolio">
+                <div class="container-titolo">
+                    <h3 id="number">01</h3>
+                    <h3 id="portfolio-title">Progetto FORM</h3>
+                    <p id="portfolio-description">Progetto di realizzazione di un form di contatto, concepito per
+                        dimostrare
+                        alcune delle mie competenze chiave: design grafico, implementazione di controlli di sicurezza e
+                        gestione efficiente del database. Questo lavoro evidenzia la mia capacità di creare interfacce
+                        user-friendly, mantenendo al contempo elevati standard di sicurezza e funzionalità.</p>
+
+                    <div class="sub-box-portfolio">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                    </div>
+
+                    <hr>
+
+                    <div class="container-codice">
+                        <div class="download">
+                            <a id="code-link" href="http://localhost/form-ajax/login.html" target="_blank"><i
+                                    class="ri-arrow-right-up-line"></i></a>
+                            <div class="hover-text">Vedi progetto</div>
+                        </div>
+                        <div class="git-hub">
+                            <a id="project-link" href="https://github.com/GianlucaValenziWeb" target="_blank"><i
+                                    id="git-hub" class="devicon-github-original"></i></a>
+                            <div class="hover-text">Vedi repository</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-lavoro">
+                    <div class="container-img">
+                        <img id="project-img" src="images/60031.jpg" alt="Image 1" class="active">
+                        <div class="overlay">
+                            <a id="download-link" href="progettoinarrivo" target="_blank">
+                                <span>Vai al progetto</span>
+                                <i id="project" class="ri-arrow-right-up-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-arrow">
+                        <div id="prev" class="arrow left-arrow">
+                            <i class="ri-arrow-left-double-line"></i>
+                        </div>
+                        <div id="next" class="arrow right-arrow">
+                            <i class="ri-arrow-right-double-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTATTI -->
+        <section id="contatti" class="section">
+            <div class="titolo">
+                <h3>Se sei interessato al mio profilo non aspettare, <span>contattami</span> !!!</h3>
+            </div>
+
+            <form class="form-contatti scroll-bottom" autocomplete="off"
+                onsubmit="event.preventDefault(); SendEmail();">
+                <div class="input-box">
+                    <i class="ri-user-3-line"></i>
+                    <input type="text" id="nm" class="focus" placeholder="Nome" name="name" required>
+                    <div class="box">
+                        <label>Nome</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="email" class="focus" placeholder="Email" name="user" required>
+                    <div class="box">
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <i id="icon-text" class="ri-text-snippet"></i>
+                    <textarea id="text" class="focus" placeholder="Scrivimi" name="message"></textarea>
+                    <div class="box" id="box-area">
+                        <label>Scrivimi</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <button type="submit" id="btn-invia">INVIA</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <section id="footer">
+            <div id="waterdrop"></div>
+            <footer class="container-footer scroll-scale">
+                <div class="footer-section">
+                    <ul>
+                        <h3>Links</h3>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <ul class="social-icons">
+                        <h3 id="t-social">Social</h3>
+                        <li><a href="https://www.linkedin.com/in/gianluca-valenzi-319535324/" target="_blank"><i
+                                    class="ri-linkedin-box-line"></i><span>Linkedin</span></a></li>
+                        <li><a href="https://github.com/GianlucaValenziWeb" target="_blank"><i
+                                    class="ri-github-line"></i><span>Git-hub</span></a></li>
+                        <li><a id="bla" href="https://www.fiverr.com/gianlucavalenzi/buying?source=avatar_menu_profile"
+                                target="_blank">
+                                <i id="fiver">FI</i><span id="c">Fiverr</span></a>
+                        </li>
+                        <li><a href="https://www.google.com/intl/it/gmail/about/" target="_blank"><i class="ri-mail-line"
+                                    style="font-size: 22px;"></i><span>gianlucavalenzi <span
+                                        id="em">web@gmail.com</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <div class="container-cont">
+                        <h3>Contattami</h3>
+                        <p>Sei un'azienda in cerca di personale?</p>
+                        <p>Hai bisogno di un sito web?</p>
+                        <p>Che aspetti,<a href="#contatti">contattami!</a></p>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="footer-bottom scroll-scale">
+                <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
+            </div>
+        </section>
+
+        <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line"></i></a>
+</body>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+<script>
+    jQuery('#waterdrop').raindrops({ color: '#0d0d3f', canvasHeight: 30, density: 1, frequency: 6 });
+</script>
+
+</html>

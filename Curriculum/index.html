@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Gianluca Valenzi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon-32x32.png">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <div class="popup-overlay active" id="popup">
+        <div class="popup-content">
+            <h2>Benvenuto nel mio curriculum</h2>
+            <p>Premere Ctrl + P per stampare!</p>
+            <button class="close-popup" onclick="closePopup()">Chiudi</button>
+        </div>
+    </div>
+
+    <div class="container-curriculum">
+        <div class="container-body">
+            <!-- CONTENITORE DI SINISTRA -->
+            <div class="container-left">
+                <div class="container-foto">
+                    <div class="container-img">
+                        <img src="images/img-curriculum-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h1>GIANLUCA VALENZI</h1>
+                    </div>
+                    <hr>
+                    
+                </div>
+
+                <div class="container-dati">
+                    <div class="container-info">
+                        <h3>INFORMAZIONI</h3>
+                        
+                        <div class="info">
+                            <div class="dati"><i class="ri-mail-line"></i>gianlucavalenziweb@gmail.com</div>
+                            <div class="dati"><i class="ri-map-pin-user-fill"></i>Roma, Italia</div>
+                            <div class="dati"><i class="ri-calendar-line"></i>05/07/2004</div>
+                            <div class="dati"><i class="ri-linkedin-fill"></i>Gianluca Valenzi</div>
+                            <div class="dati"><i class="ri-phone-line"></i>3318599388</div>
+                            <div class="dati"><i class="ri-earth-line"></i>www.ilmiosito.com</div>
+                        </div>
+                        <div class="container-lingue">
+                            <h3>LINGUE</h3>
+                            <div class="progress-container">
+                                <div class="language">Inglese</div>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="labels">
+                                    <span class="label">A1</span>
+                                    <span class="label">A2</span>
+                                    <span class="label">B1</span>
+                                    <span class="label">B2</span>
+                                    <span class="label">C1</span>
+                                    <span class="label">C2</span>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="language" id="language-spa">Spagnolo</div>
+                                <div class="progress-bar">
+                                    <div class="progress" id="progress-spa"></div>
+                                </div>
+                                <div class="labels">
+                                    <span class="label">A1</span>
+                                    <span class="label">A2</span>
+                                    <span class="label">B1</span>
+                                    <span class="label">B2</span>
+                                    <span class="label">C1</span>
+                                    <span class="label">C2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-hobby">
+                            <h3>HOBBY</h3>
+                            <div class="hobby">
+                                <span id="background">
+                                    <i id="ciao" class="ri-football-line"></i>
+                                    <span id="desc">
+                                        Calcio
+                                    </span>
+                                </span>
+                                <span id="background">
+                                    <i id="ciao" class="ri-suitcase-line"></i>
+                                    <span id="desc">
+                                        Viaggiare
+                                    </span>
+                                </span>
+                                <span id="background">
+                                    <i id="ciao" class="ri-music-line"></i>
+                                    <span id="desc">
+                                        Musica
+                                    </span>
+                                </span>
+                                <span id="background">
+                                    <i id="ciao" class="ri-film-line"></i>
+                                    <span id="desc">
+                                        Film
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="hr-footer">
+                    <div class="container-footer">
+                        <div class="stampa">
+                            Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae
+                            in base all’art. 13 del D. Lgs. 196/2003 e all’art. 13 del Regolamento UE
+                            2016/679 relativo alla
+                            protezione delle persone fisiche con riguardo al trattamento dei dati personali.
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- CONTENITORE DI DESTRA -->
+            <div class="container-right">
+                <div class="container-profilo">
+                    <h3>
+                        <span class="container-icon">
+                            <i class="ri-user-fill"></i>
+                        </span>
+                        PROFILO
+                    </h3>
+
+                    <p>Ciao, sono entusiasta di presentarvi il mio profilo professionale. Ho completato
+                        il mio percorso scolastico con un diploma in Amministrazione, Finanza e Marketing, un'esperienza
+                        che ha lasciato un'impronta significativa nella mia vita.
+
+                        Dopo il diploma, ho deciso di non proseguire con l'università né con studi specifici nel mio
+                        campo di indirizzo. Ho quindi iniziato a esplorare il mondo del web in modo autodidatta e,
+                        spinto dalla crescente passione, ho intrapreso un corso di Web Developer presso il CEFI, un ente
+                        accreditato della Regione Lazio. Questo percorso mi ha fornito 256 ore di formazione e 120 ore
+                        di tirocinio, offrendomi una base solida.
+
+                        Attualmente, sto iniziando a dedicarmi alla creazione e gestione di piccoli siti web,
+                        un'attività che mi permette di esprimere la mia creatività e di affinare le mie competenze
+                        tecniche. Parallelamente, sono impegnato nel calcio a 5 a livello nazionale agonistico, sport
+                        che pratico fin da giovane e che mi ha insegnato il valore del lavoro di squadra, della
+                        disciplina e della perseveranza.
+
+                        La mia esperienza lavorativa finora include alcuni mesi come babysitter e due giorni come
+                        scrutatore.
+                        Il mio carattere evidenzia una forte determinazione, buone capacità di problem solving e una
+                        predisposizione al lavoro di squadra. Sono anche una persona molto precisa e dedita a completare
+                        sempre i compiti assegnati.
+
+                        Grazie per l'attenzione e non esitate a contattarmi se il mio profilo vi interessa.
+                    </p>
+                </div>
+                <div class="container-scuola">
+                    <h3>
+                        <span class="container-icon">
+                            <i class="ri-book-marked-fill"></i>
+                        </span>
+                        ESPERIENZA SCOLASTICA
+                    </h3>
+                    <div class="scuola">
+                        <div class="anni">
+                            <div>2023</div>
+                            <div>2024</div>
+                        </div>
+                        <div class="freccia">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="esperienza">
+                            <div>Diploma in AFM</div>
+                            <div>Corso Cefi in Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-lavori">
+                    <h3>
+                        <span class="container-icon">
+                            <i class="ri-pencil-fill"></i>
+                        </span>
+                        ESPERIENZA LAVORATIVA
+                    </h3>
+                    <div class="scuola">
+                        <div class="anni">
+                            <div>2022</div>
+                            <div>2024</div>
+                        </div>
+                        <div class="freccia">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="esperienza">
+                            <div>Babysitter</div>
+                            <div>Scrutatore elezioni</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-skills">
+                    <h3>
+                        <span class="container-icon">
+                            <i class="ri-magic-line"></i>
+                        </span>
+                        SKILLS PROFESSIONALI
+                    </h3>
+                    <div class="skills">
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <span>HTML</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            <span>CSS</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                            <span>PHP</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+                            <span>JQUERY</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
+                            <span>PHOTOSHOP</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" />
+                            <span>WORDPRESS</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                            <span>MYSQL</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img src="https://img.icons8.com/color/48/ms-word.png" alt="ms-word" />
+                            <span>WORD</span>
+                        </div>
+                        <div class="sub-box" id="sub-html">
+                            <img src="https://img.icons8.com/fluency/48/ms-excel.png" alt="ms-excel" />
+                            <span>EXCEL</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Funzione per chiudere il popup
+    function closePopup() {
+        document.getElementById('popup').classList.remove('active');
+    }
+
+    // Mostra il popup automaticamente al caricamento della pagina
+    window.onload = function () {
+        document.getElementById('popup').classList.add('active');
+    };
+</script>
+
+</html>
