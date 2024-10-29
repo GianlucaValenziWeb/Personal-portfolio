@@ -1,9 +1,4 @@
 //  Send Email js
-
-// (function () {
-//     emailjs.init("YOUR_USER_ID"); // Sostituisci "YOUR_USER_ID" con il tuo user ID di emailjs
-// })();
-
 function SendEmail() {
     // Ottieni i valori degli input
     let name = document.getElementById("nm").value;

@@ -1,402 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="application-name" content="gianlucavalenzi.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal web-site</title>
+    <title>Gianluca Valenzi</title>
     <!-- FAVICON -->
-    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="icon" href="images/favicon-16x16.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" rel="preload" href="style.css">
+    <link rel="stylesheet" rel="preload" href="media.css">
     <!-- ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
         integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- DEVICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <!-- EMAIL JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "CYJAtdENekvkkidDE",
-            });
-        })();
-    </script>
-    <script src="email.js"></script>
 </head>
 
 <body>
-    <!-- NAVBAR -->
     <header id="header">
-        <nav class="nav-menu">
-            <ul class="navbar">
-                <li class="logo">
-                    <div id="logo"><a href="#">GV</a></div>
-                </li>
-                <input type="checkbox" id="check">
-                <span class="menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#info" class="nav-link">Info</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#contatti" class="nav-link">Contatti</a></li>
-                    <label for="check" class="nav-toggle" id="close-menu"><i class="ri-close-large-line"></i></label>
-                </span>
-                <label for="check" class="nav-toggle" id="open-menu"><i class="ri-menu-line"></i> </label>
-            </ul>
-        </nav>
+        <div id="logo"><a href="#"><span id="titolo"><span>G</span>IANLUCA <span>V</span>ALENZI</span> <span
+                    id="sottotitolo">Sviluppatore web freelance</span></a></div>
+        <input type="checkbox" id="check">
+        <ul class="menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#info" class="nav-link">Chi sono</a></li>
+            <li><a href="#servizi" class="nav-link">Servizi</a></li>
+            <li><a href="#competenze" class="nav-link">Competenze</a></li>
+            <li><a href="#lavori" class="nav-link">Lavori</a></li>
+            <li><a href="#contatti" class="nav-link">Contatti</a></li>
+            <li><label for="check" class="nav-toggle" id="close-menu"><i class='bx bx-x'></i></label></li>
+        </ul>
+        <label for="check" class="nav-toggle" id="open-menu">
+            <i class='bx bx-menu'></i>
+        </label>
     </header>
 
-    <main>
-        <!-- SECTION HOME -->
-        <section id="home" class="section">
-            <div class="container-corpo">
-                <div class="corpo scroll-scale">
-                    <div class="dati">
-                        <h1>Ciao! Mi chiamo <span id="name">Gianluca&nbsp;Valenzi</span></h1>
-                        <h3>Sono un <span> Web Developer</span> in cerca di lavoro</h3>
-                        <a href="https://www.linkedin.com/in/gianluca-valenzi-319535324/" target="_blank">
-                            <img id="linkedin"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-                        </a>
-                        <a href="https://github.com/GianlucaValenziWeb" target="_blank">
-                            <i id="git-hub" class="devicon-github-original"></i>
-                        </a>
-                    </div>
+    <!-- HOME -->
+    <section id="home">
+        <div class="container-testa">
+            <h1 id="name">GIANLUCA <br> VALENZI</h1>
+            <p class="intro-paragraph">
+                Benvenuti nel mio sito! Qui potrete scoprire chi sono, i servizi che offro, i
+                progetti a cui ho lavorato e le competenze che metto al servizio delle
+                <span class="p-bold">vostre idee</span>. Ogni sezione riflette la mia passione per il lavoro e
+                l’attenzione che dedico a ogni dettaglio, con l’obiettivo di offrire soluzioni creative e su misura.
+                Se cercate una persona motivata, ambiziosa e pronta a <span class="p-bold">crescere insieme ai vostri
+                    progetti</span>, sarò felice di collaborare con voi.
+            </p>
+            <a href="#info" class="btn-chi-siamo">
+                <i class='bx bx-down-arrow-alt'></i>
+                Scopri chi sono
+            </a>
+        </div>
+        <div class="container-corpo">
+            <div class="image-container heartbeat">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#72B6FF"
+                        d="M44.9,-66.3C59.6,-60.4,74,-50.4,81.1,-36.6C88.2,-22.7,88,-5.1,82.5,9.7C77.1,24.5,66.4,36.4,56.3,49.9C46.3,63.5,37,78.8,23.8,83.9C10.7,89,-6.3,84,-18.9,75.3C-31.4,66.5,-39.7,54,-50.6,43C-61.4,31.9,-74.9,22.3,-80.4,9.2C-85.9,-3.8,-83.4,-20.4,-74.3,-31.3C-65.2,-42.3,-49.6,-47.6,-36.2,-54.1C-22.7,-60.6,-11.3,-68.2,1.9,-71.1C15.1,-74,30.1,-72.2,44.9,-66.3Z"
+                        transform="translate(100 100)" />
+                </svg>
+                <img src="images/622-removebg-preview.png" alt="Gianluca Valenzi">
+            </div>
+        </div>
+        <!-- <div class="custom-shape-divider-bottom-1730197170">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+    </section>
 
-                    <div class="container-avatar heartbeat scroll-scale">
-                        <img id="myavatar" src="images/avatar-blu.png" alt="avatar">
-
-                    </div>
+    <section id="info">
+        <div class="container-chi-siamo">
+            <div class="sezione-chi-siamo">
+                <div class="foto-container">
+                    <img src="images/freepik__retouch__35752-removebg-preview-removebg-preview.png"
+                        alt="Foto Gianluca 2" class="foto-chi-siamo">
                 </div>
+                <div class="testo-container">
+                    <h2>Chi sono?</h2>
+                    <p>Mi chiamo Gianluca Valenzi, ho <span class="p-bold">20 anni</span> e sono un giovane appassionato
+                        del mondo digitale. Dopo
+                        gli studi, ho scelto di seguire la mia passione, dedicandomi con impegno alla formazione
+                        continua e approfondendo le mie conoscenze attraverso <span class="p-bold">corsi
+                            specializzati</span> e studio individuale.
+                        Ogni progetto è per me una possibilità di miglioramento e di confronto, dove unisco creatività e
+                        tecnica per offrire <span class="p-bold">soluzioni su misura</span>.</p>
+                </div>
+            </div>
 
-                <a href="#info" class="piede scroll-scale">
-                    <div class="arrow-down">
-                        <i class="ri-arrow-down-fill"></i>
-                    </div>
-                    <span class="work">
-                        Scopri di più
-                    </span>
+            <div class="sezione-chi-siamo">
+                <div class="foto-container">
+                    <img src="images/2597612-removebg-preview-removebg-preview.png" alt="Foto Gianluca 1"
+                        class="foto-chi-siamo">
+                </div>
+                <div class="testo-container">
+                    <h2>Perché scegliere me?</h2>
+                    <p>Scegliere un giovane alle prime armi può sembrare una sfida, ma è anche un’opportunità per
+                        ottenere una <span class="p-bold">collaborazione fresca e motivata</span>. Essendo all’inizio
+                        della mia carriera, vedo ogni
+                        progetto come una preziosa occasione per dimostrare il mio valore e per dare il massimo in ogni
+                        dettaglio. Mi dedico con entusiasmo e dedizione, mettendo tutto il mio impegno per soddisfare le
+                        aspettative di chi decide di affidarsi a me. Ho bisogno della vostra fiducia per crescere e, in
+                        cambio, prometto <span class="p-bold">serietà</span>, impegno e un lavoro accurato.</p>
+                </div>
+            </div>
+            <div class="sezione-chi-siamo">
+                <div class="foto-container">
+                    <img src="images/3918929-removebg-preview-removebg-preview.png" alt="Foto Gianluca 1"
+                        class="foto-chi-siamo">
+                </div>
+                <div class="testo-container">
+                    <h2>Perché è importante avere un sito web</h2>
+                    <p>Avere un sito web è fondamentale per chiunque desideri <span class="p-bold">farsi notare nel
+                            mercato attuale</span>. Un sito semplice e ben progettato funge da biglietto da visita
+                        online, permettendo ai clienti di
+                        conoscere i vostri servizi e prodotti in modo immediato e intuitivo. È uno strumento
+                        efficace
+                        per costruire <span class="p-bold">credibilità e fiducia</span>, poiché comunica serietà e
+                        impegno. Inoltre, rappresenta
+                        una
+                        piattaforma ideale per raggiungere un <span class="p-bold">pubblico più vasto</span>,
+                        facilitando il contatto con
+                        potenziali
+                        clienti. In un'era in cui la presenza online è imprescindibile, avere un sito web non è solo
+                        un
+                        vantaggio, ma una necessità per emergere e crescere nel proprio settore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servizi">
+        <div class="container-servizi">
+
+
+            <h2>Cosa posso fare per te</h2>
+            <p id="p-servizi">
+                Scopri come posso aiutarti a creare una presenza online su misura, con servizi pensati per valorizzare
+                al meglio la tua attività.
+            </p>
+            <div class="container-tab">
+                <div class="tab">
+                    <div class="tab-icon"><i class='bx bx-desktop'></i></div>
+                    <h3>Realizzazione siti web</h3>
+                    <p>Propongo la creazione di <span class="p-bold">siti web vetrina</span>, realizzati interamente con
+                        codice e ottimizzati per
+                        essere funzionali e responsive. Questi siti sono perfetti per chi ha appena avviato un'attività
+                        e cerca una soluzione professionale per farsi conoscere e attrarre nuovi clienti.</p>
+                </div>
+                <div class="tab">
+                    <div class="tab-icon"><i class='bx bx-clipboard'></i></div>
+                    <h3>Realizzazione CV vitae</h3>
+                    <p>Creo il tuo <span class="p-bold">Curriculum Vitae personalizzato</span>, originale e moderno con
+                        HTML, CSS o
+                        utilizzando
+                        i migliori framework del momento. Realizzo CV professionali, dettagliati e ottimizzati
+                        per
+                        mettere in risalto le tue competenze e la tua esperienza.</p>
+                </div>
+                <div class="tab">
+                    <div class="tab-icon"><i class='bx bx-search-alt-2'></i></div>
+                    <h3>Ottimizzazione SEO</h3>
+                    <p>Pur non essendo uno specialista SEO, posso offrirti un piccolo
+                        supporto per migliorare la visibilità del tuo sito sui motori di ricerca. Mi
+                        concentro sugli
+                        aspetti fondamentali, come <span class="p-bold">l'ottimizzazione delle parole chiave</span>, il
+                        miglioramento
+                        dei tempi
+                        di caricamento e <span class="p-bold">l'adeguamento delle immagini e dei meta-tag</span>.</p>
+                </div>
+                <div class="tab">
+                    <div class="tab-icon"><i class='bx bxs-edit'></i></div>
+                    <h3>Realizzazione loghi</h3>
+                    <p>Non è il mio ruolo principale, ma offro anche un servizio di <span class="p-bold">creazione
+                            loghi</span> per aiutarti a
+                        definire l’identità visiva della tua attività. Con tempi di consegna rapidi, realizzo loghi
+                        semplici e d’impatto che rappresentino al meglio la tua visione.</p>
+                </div>
+                <div class="tab">
+                    <div class="tab-icon"><i class='bx bxs-wrench'></i></div>
+                    <h3>Assistenza del sito</h3>
+                    <p>Su richiesta, offro assistenza per mantenere <span class="p-bold">il tuo sito sempre aggiornato e
+                            funzionale</span>. Sono
+                        disponibile per intervenire e supportarti nella gestione, così potrai concentrarti sulla tua
+                        attività senza preoccupazioni.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-promo">
+            <div class="pagina-responsive">
+                <div class="testo">
+                    <h2>Siti completamente responsive</h2>
+                    <p id="p-primo">Adattabilità su ogni dispositivo!</p>
+                    <p>
+                        I miei siti web sono progettati per essere completamente responsive, il che significa che si
+                        adattano perfettamente a <span class="p-bold">qualsiasi dispositivo</span>, che si tratti di smartphone, tablet o desktop.
+                        Questo approccio garantisce un'esperienza utente ottimale, consentendo ai visitatori di navigare
+                        facilmente e accedere ai contenuti senza difficoltà, indipendentemente dalla dimensione dello
+                        schermo. L’adattabilità dei miei siti è fondamentale per raggiungere un pubblico più vasto e per
+                        garantire che la tua attività sia sempre visibile e accessibile. Investire in un sito web
+                        responsive significa non solo migliorare l'aspetto estetico, ma anche massimizzare l'interazione
+                        e la <span class="p-bold">soddisfazione degli utenti</span>, elementi cruciali per il successo della tua presenza online.
+                    </p>
+                </div>
+                <div class="responsive-img">
+                    <img src="images/20945446-removebg-preview.png" alt="Immagine 1">
+                </div>
+            </div>
+            <div class="pagina-responsive">
+                <div class="responsive-img">
+                    <img src="images/2304-i402-040-F-m004-c9-Financial_Instability_flat_icons_background-removebg-preview.png"
+                        alt="Immagine 1">
+                </div>
+                <div class="testo">
+                    <h2>Siti Web a Basso Prezzo</h2>
+                    <p id="p-primo">Il Tuo Sito Web a Prezzi Accessibili!</p>
+                    <p>
+                        I miei siti web hanno un <span class="p-bold">costo sotto la media del mercato</span>, poiché sono ancora all'inizio della
+                        mia carriera e desidero costruire la mia esperienza attraverso progetti concreti. Questo
+                        approccio mi consente di offrire tariffe vantaggiose, senza compromettere la <span class="p-bold">qualità</span> del lavoro.
+                        Il prezzo finale sarà stabilito in base alle specifiche richieste e alle esigenze del progetto,
+                        garantendo così un <span class="p-bold">servizio personalizzato e accessibile</span>. Sono convinto che investire in un sito
+                        web a un prezzo competitivo sia un'opportunità per entrambe le parti: da un lato, tu avrai un
+                        prodotto di alta qualità a un costo contenuto; dall'altro, io avrò la possibilità di crescere e
+                        affinare le mie competenze, creando risultati che parlino per me.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competenze">
+        <div class="testa-competenze">
+            <h2>Le mie competenze</h2>
+            <p>Per avere un'idea più chiara del mio percorso professionale e delle esperienze che ho accumulato, puoi
+                scaricare <span class="p-bold">il mio curriculum</span>. In esso troverai dettagli sui progetti a cui ho lavorato, le mie esperienze
+                formative e le competenze che ho sviluppato. Questo documento rappresenta un'opportunità per
+                approfondire la mia professionalità e il mio approccio al lavoro. Scopri come posso contribuire al tuo
+                progetto con entusiasmo e impegno
+            </p>
+            <a href="file/Curriculum Gianluca Valenzi.pdf" target="_blank">
+                <button id="download-cv" class="download-button">
+                    <i class='bx bxs-arrow-to-bottom'></i>
+                    DOWNLOAD CV
+                </button>
+            </a>
+        </div>
+
+        <div class="logo">
+            <div class="logo-slide">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+                <i class="devicon-photoshop-line"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-moodle-plain-wordmark colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+                <i class="devicon-photoshop-line"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-moodle-plain-wordmark colored"></i>
+            </div>
+        </div>
+    </section>
+    <!-- LAVORI -->
+    <section id="lavori">
+        <h2>I miei lavori</h2>
+        <p id="p-lavori">Scopri i progetti che ho realizzato finora, una selezione di lavori che riflettono il mio
+            <span class="p-bold">impegno e la mia creatività</span>. Ogni progetto è un esempio del mio stile e delle mie competenze in continua
+            evoluzione.</p>
+        <div class="progetto-container">
+            <img src="images/CI.png" alt="Progetto Ristorante">
+            <div class="info-progetto">
+                <h3 id="number">01&nbsp;</h3>
+                <h3>Sito ristorante</h3>
+                <p>Ho creato un sito web fittizio per un ristorante, progettato per illustrare come potrebbe apparire
+                    un'esperienza online accattivante e funzionale.</p>
+                <span id="linguaggi">
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </span>
+                <hr>
+                <a href="#sitoristorante" class="btn-lavori">
+                    <i id="project" class="ri-arrow-right-up-line"></i>
+                    Visita il sito
                 </a>
             </div>
-        </section>
+        </div>
 
-        <!-- SECTION INFO -->
-        <section id="info" class="section scroll-scale">
-            <div class="container-info">
-                <div class="container-left">
-                    <div class="corpo-info">
-                        <h3>Perché scegliere <span>me?</span></h3>
-                        <p>
-                            Sono un giovane web developer, appena uscito da un corso di formazione.
-                            Sono entusiasta di mettere in pratica le mie competenze e di contribuire attivamente
-                            alle esigenze dei miei clienti. La mia determinazione, unita alla voglia di imparare e
-                            crescere,
-                            mi rendono un candidato ideale per chi cerca una risorsa affidabile e motivata.
-                            Sono pronto ad affrontare nuove sfide e a dimostrare il mio valore attraverso risultati
-                            concreti
-                            e un impegno costante.
-                        </p>
-                    </div>
-
-                    <div class="piede-info">
-                        <div class="container-button">
-                            <button id="btn-exp" class="tap-button active" data-target="container-1">ESPERIENZE</button>
-                            <button id="btn-skills" class="tap-button" data-target="container-2">SKILLS</button>
-                            <button id="btn-about" class="tap-button" data-target="container-3">ALTRE
-                                INFORMAZIONI</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EXP -->
-                <div class="container-right">
-                    <div id="container-1" class="tab-content active">
-                        <h3>Esperienze</h3>
-                        <div class="p-exp">
-                            <p>Ho frequentato la scuola superiore di amministrazione finanza e marketing.
-                                Dopo il diploma inizio a esplorare il mondo del web in modo
-                                autodidatta e, spinto dalla crescente passione, ho intrapreso un
-                                corso di Web Developer presso il CEFI, un ente accreditato della Regione Lazio. Questo
-                                percorso mi ha fornito 256 ore di formazione e
-                                120 ore di tirocinio, offrendomi una base solida per iniziare a muovere i primi passi in
-                                questo nuovo mondo.
-                            </p>
-                        </div>
-
-                        <div class="container-exp">
-                            <div class="left-box">
-                                <h4 class="year">2023</h4>
-                                <h4 class="title">Diploma in AFM</h4>
-                            </div>
-                            <div class="right-box">
-                                <h4 class="year">2024</h4>
-                                <h4 class="title" id="corso">Corso CEFI Web-Developer</h4>
-                            </div>
-                        </div>
-
-                        <div class="curriculum-button-container">
-                            <a href="file/Curriculum Gianluca Valenzi.pdf" target="_blank"><button id="download-cv"
-                                    class="download-button"> DOWNLOAD CV</button></a>
-                        </div>
-                    </div>
-
-                    <!-- SKILLS -->
-                    <div id="container-2" class="tab-content">
-                        <h3>Skills</h3>
-                        <div class="p-skills">
-                            <p>Ho esperienza in sviluppo web front-end e back-end. <br>
-                                Di sotto puoi trovare i linguaggi studiati al corso
-                                e da me approfonditi, con in allegato il certificato
-                                che attesta le ore di frequenza per ogni linguaggio:
-                            </p>
-                        </div>
-
-                        <div class="container-skills">
-                            <div class="skills">
-                                <div class="sub-box" id="sub-html">
-                                    <a href="file/ATTESTATO-HTML-CSS.pdf" target="_blank">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                                        <span>HTML</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-css">
-                                    <a href="file/ATTESTATO-HTML-CSS.pdf" target="_blank"></a>
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                                    <span>CSS</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-js">
-                                    <a href="file/ATTESTATO -JS-JQ.pdf" target="_blank">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                        <span>JAVASCRIPT</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-PHP">
-                                    <a href="file/ATTESTATO-PHP..pdf" target="_blank">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                                        <span>PHP</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-jq">
-                                    <a href="file/ATTESTATO -JS-JQ.pdf" target="_blank">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
-                                        <span>JQUERY</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-ph">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
-                                    <span>PHOTOSHOP</span>
-                                </div>
-                                <div class="sub-box" id="sub-wp">
-                                    <a href="file/ATTESTATO-WP.pdf" target="_blank">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" />
-                                        <span>WORDPRESS</span>
-                                    </a>
-                                </div>
-                                <div class="sub-box" id="sub-sic">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                                    <span>MYSQL</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ABOUT -->
-                    <div id="container-3" class="tab-content">
-                        <h3>Altre informazioni:</h3>
-                        <div class="p-about">
-                            <p>Altre informazioni su di me che ti possono tornare utili:</p>
-                        </div>
-
-                        <div class="container-about">
-                            <div class="about">
-                                <div class="column">
-                                    <span class="dom">Nome: <span class="risp">Gianluca</span></span>
-                                    <span class="dom">Cognome: <span class="risp">Valenzi</span></span>
-                                    <span class="dom">Età: <span class="risp">20 anni</span></span>
-                                    <span class="dom" id="dom1">Lingua: <span class="risp">Italiano</span></span>
-                                </div>
-                                <div class="column">
-                                    <span class="dom">Freelance: <a href="#footer"><span id="free-s"
-                                                class="risp">Disponibile</span></span></a>
-                                    <span class="dom">Città: <span class="risp">Roma, Italia</span></span>
-                                    <span class="dom">Titolo di studio: <span class="risp">Diploma</span></span>
-                                    <span class="dom">Email: <a href="#contatti"><span id="email-s" class="risp">
-                                                gianlucavalenziweb
-                                                <br>@gmail.com</span></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!-- SECTION PORTFOLIO -->
-        <section id="portfolio" class="section scroll-scale">
-            <div class="container-portfolio">
-                <div class="container-titolo">
-                    <h3 id="number">01</h3>
-                    <h3 id="portfolio-title">Progetto FORM</h3>
-                    <p id="portfolio-description">Progetto di realizzazione di un form di contatto, concepito per
-                        dimostrare
-                        alcune delle mie competenze chiave: design grafico, implementazione di controlli di sicurezza e
-                        gestione efficiente del database. Questo lavoro evidenzia la mia capacità di creare interfacce
-                        user-friendly, mantenendo al contempo elevati standard di sicurezza e funzionalità.</p>
-
-                    <div class="sub-box-portfolio">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                    </div>
-
-                    <hr>
-
-                    <div class="container-codice">
-                        <div class="download">
-                            <a id="code-link" href="http://localhost/form-ajax/login.html" target="_blank"><i
-                                    class="ri-arrow-right-up-line"></i></a>
-                            <div class="hover-text">Vedi progetto</div>
-                        </div>
-                        <div class="git-hub">
-                            <a id="project-link" href="https://github.com/GianlucaValenziWeb" target="_blank"><i
-                                    id="git-hub" class="devicon-github-original"></i></a>
-                            <div class="hover-text">Vedi repository</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-lavoro">
-                    <div class="container-img">
-                        <img id="project-img" src="images/60031.jpg" alt="Image 1" class="active">
-                        <div class="overlay">
-                            <a id="download-link" href="progettoinarrivo" target="_blank">
-                                <span>Vai al progetto</span>
-                                <i id="project" class="ri-arrow-right-up-line"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="container-arrow">
-                        <div id="prev" class="arrow left-arrow">
-                            <i class="ri-arrow-left-double-line"></i>
-                        </div>
-                        <div id="next" class="arrow right-arrow">
-                            <i class="ri-arrow-right-double-line"></i>
-                        </div>
-                    </div>
-                </div>
+        <div class="progetto-container">
+            <img src="images/Gianluca Valenzi (1).png" alt="Progetto Ristorante">
+            <div class="info-progetto">
+                <h3 id="number">02&nbsp;</h3>
+                <h3>Curriculum Vitae</h3>
+                <p>Ho realizzato un curriculum vitae personale, progettato per evidenziare le mie competenze e la mia
+                    formazione in modo chiaro e professionale. Il design è moderno e intuitivo</p>
+                <span id="linguaggi">
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                </span>
+                <hr>
+                <a href="#sitoristorante" class="btn-lavori">
+                    <i id="project" class="ri-arrow-right-up-line"></i>
+                    Visita il sito
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SECTION CONTATTI -->
-        <section id="contatti" class="section">
-            <div class="titolo">
-                <h3>Se sei interessato al mio profilo non aspettare, <span>contattami</span> !!!</h3>
+    <!-- CONTATTI -->
+    <section id="contatti">
+        <h2>Lavoriamo insieme!</h2>
+        <div class="contenitore-contatti">
+            <div class="testa-contatti">
+                <h3>Hai un'idea o un progetto?</h3>
+                <p>Se hai un’idea o un progetto che desideri realizzare, sono qui per aiutarti a <span class="p-bold">trasformarli in realtà</span>.
+                    Con le mie competenze e un approccio moderno, posso offrirti soluzioni creative e personalizzate a
+                    prezzi molto competitivi. Credo che ogni progetto meriti attenzione e cura, e sono pronto a
+                    investire il tempo necessario per garantire <span class="p-bold">risultati di alta qualità</span>.
+                    Se sei pronto a iniziare questo viaggio insieme, compila il form di contatto e sarò felice di
+                    ascoltare le tue esigenze per trovare <span class="p-bold">la soluzione perfetta per te</span>!</p>
+            </div>
+            <div class="corpo-contatti">
+                <form autocomplete="off">
+                    <div class="input-box">
+                        <i class="ri-user-3-line"></i>
+                        <input type="text" id="nm" class="focus" placeholder="Nome" name="name" required>
+                        <div class="box">
+                            <label>Nome</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="email" class="focus" placeholder="Email" name="user" required>
+                        <div class="box">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <i id="icon-text" class="ri-text-snippet"></i>
+                        <textarea id="text" class="focus" placeholder="Scrivimi" name="message"></textarea>
+                        <div class="box" id="box-area">
+                            <label>Scrivimi</label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" id="btn-invia">INVIA</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer class="container-footer">
+            <div class="footer-section scroll-scale">
+                <h3>Mappa del sito</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#info">Chi siamo</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#competenze">Competenze</a></li>
+                    <li><a href="#lavori">Lavori</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
             </div>
 
-            <form class="form-contatti scroll-bottom" autocomplete="off"
-                onsubmit="event.preventDefault(); SendEmail();">
-                <div class="input-box">
-                    <i class="ri-user-3-line"></i>
-                    <input type="text" id="nm" class="focus" placeholder="Nome" name="name" required>
-                    <div class="box">
-                        <label>Nome</label>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <i class="ri-mail-line"></i>
-                    <input type="email" id="email" class="focus" placeholder="Email" name="user" required>
-                    <div class="box">
-                        <label>Email</label>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <i id="icon-text" class="ri-text-snippet"></i>
-                    <textarea id="text" class="focus" placeholder="Scrivimi" name="message"></textarea>
-                    <div class="box" id="box-area">
-                        <label>Scrivimi</label>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <button type="submit" id="btn-invia">INVIA</button>
-                </div>
-            </form>
-        </section>
-
-        <!-- FOOTER -->
-        <section id="footer">
-            <div id="waterdrop"></div>
-            <footer class="container-footer scroll-scale">
-                <div class="footer-section">
-                    <ul>
-                        <h3>Links</h3>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Contatti</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <ul class="social-icons">
-                        <h3 id="t-social">Social</h3>
-                        <li><a href="https://www.linkedin.com/in/gianluca-valenzi-319535324/" target="_blank"><i
-                                    class="ri-linkedin-box-line"></i><span>Linkedin</span></a></li>
-                        <li><a href="https://github.com/GianlucaValenziWeb" target="_blank"><i
-                                    class="ri-github-line"></i><span>Git-hub</span></a></li>
-                        <li><a id="bla" href="https://www.fiverr.com/gianlucavalenzi/buying?source=avatar_menu_profile"
-                                target="_blank">
-                                <i id="fiver">FI</i><span id="c">Fiverr</span></a>
-                        </li>
-                        <li><a href="https://www.google.com/intl/it/gmail/about/" target="_blank"><i class="ri-mail-line"
-                                    style="font-size: 22px;"></i><span>gianlucavalenzi <span
-                                        id="em">web@gmail.com</span></span></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <div class="container-cont">
-                        <h3>Contattami</h3>
-                        <p>Sei un'azienda in cerca di personale?</p>
-                        <p>Hai bisogno di un sito web?</p>
-                        <p>Che aspetti,<a href="#contatti">contattami!</a></p>
-                    </div>
-                </div>
-            </footer>
-
-            <div class="footer-bottom scroll-scale">
-                <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
+            <div class="footer-section scroll-scale">
+                <h3 id="t-social">Servizi</h3>
+                <ul class="link-servizi">
+                    <li>
+                        <a href="#servizi">
+                            <span>Realizzazione siti web</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servizi">
+                            <span>Realizzazione CV Vitae</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servizi">
+                            <span>Ottimizzazione SEO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servizi">
+                            <span>Realizzazione loghi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#servizi">
+                            <span>Assistenza del sito</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
 
-        <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line"></i></a>
+            <div class="footer-section scroll-scale">
+                <h3>Contatti</h3>
+                <p>Email:
+                    <a id="email" href="https://www.google.com/intl/it/gmail/about/"
+                        target="_blank">gianlucavalenziweb@gmail.com</a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gianluca-valenzi-319535324/" target="_blank">
+                        <i class="devicon-linkedin-plain colored"></i>
+                    </a>
+                    <a href="https://github.com/GianlucaValenziWeb" target="_blank">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gianluca Valenzi. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <a href="#home" class="arrow-up scroll-top"><i class="ri-arrow-up-line "></i></a>
+
 </body>
 
-<!-- JS -->
-<script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
-<script>
-    jQuery('#waterdrop').raindrops({ color: '#0d0d3f', canvasHeight: 30, density: 1, frequency: 6 });
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "CYJAtdENekvkkidDE",
+        });
+    })();
+</script>
+<script src="email.js"></script>
+<script src="script.js"></script>
 
 </html>
