@@ -1,4 +1,24 @@
-@media screen and (max-width: 851px) {
+/* MEDIA TABLET */
+@media screen and (max-width: 1300px) {
+
+    /* generiche */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* navbar */
     .menu {
         flex-direction: column;
         align-items: center;
@@ -31,12 +51,64 @@
         right: 0;
     }
 
+    /* home */
+    #home {
+        padding: 90px 40px;
+    }
+
+    .container-testa .btn-chi-siamo {
+        font-size: 0.9rem;
+    }
+
+    .btn-chi-siamo i {
+        font-size: 1.5rem;
+    }
+
+    /* info */
+    #info {
+        padding: 30px 40px;
+    }
+
+    /* competenze */
+    #competenze {
+        padding: 30px 40px;
+    }
+
+    /* lavori */
+    #lavori {
+        padding: 30px 40px;
+    }
+
+    /* contatti */
+    #contatti {
+        padding: 30px 40px;
+    }
 }
 
-@media (max-width: 768px) {
+/* telefono grande - tablet piccolo */
+@media (max-width: 850px) {
+
+    /* generiche */
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* home */
     #home {
+        padding: 90px 30px;
         flex-direction: column;
-        /* height: 100%; */
     }
 
     .container-testa,
@@ -44,14 +116,164 @@
         max-width: 100%;
     }
 
-    #name {
-        font-size: 2.5rem;
+    .container-testa p {
+        padding: 10px 0 20px 0;
     }
 
-    .intro-paragraph {
-        font-size: 1rem;
+    .image-container {
+        margin-bottom: 40px;
+    }
+
+    .container-testa .btn-chi-siamo {
+        display: none;
+    }
+
+    /* info */
+    #info {
+        padding: 20px 30px;
+    }
+
+    .sezione-chi-siamo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .foto-container::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: repeating-linear-gradient(
+            135deg,
+            #0099ff,
+            #0099ff 10px,
+            transparent 10px,
+            transparent 20px
+        );
+        border-radius: 50px;
+    } */
+
+    /* competenze */
+    #competenze {
+        padding: 20px 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .testa-competenze h2 {
+        margin-bottom: 5px;
+    }
+
+    .download-button {
+        font-size: 0.9rem;
+    }
+
+    .download-button i {
+        font-size: 1.5rem;
+    }
+
+    .logo-slide i {
+        font-size: 2.8rem;
+        margin: 10px 20px;
+    }
+
+    /* lavori */
+    #lavori {
+        padding: 20px 30px;
+    }
+
+    .progetto-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .info-progetto #number {
+        display: none;
+    }
+
+    .info-progetto h3 {
+        font-size: 2rem;
+    }
+
+    #linguaggi i {
+        font-size: 1.5rem;
+    }
+
+    .info-progetto hr {
+        margin: 8px 0;
+    }
+
+    .btn-lavori {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .btn-lavori i {
+        font-size: 1.4rem;
+    }
+
+    #bottom {
+        margin-bottom: 120px;
+    }
+
+    /* contatti */
+    #contatti {
+        padding: 20px 30px;
+    }
+
+    #contatti h2 {
+        margin-bottom: 20px;
+    }
+
+    .contenitore-contatti {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* foooter */
+    .container-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section {
+        border-right: none;
+        border-bottom: 1px solid #555;
+        padding-bottom: 20px;
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-section:first-child {
+        border-left: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ANIMAZIONI */
