@@ -785,6 +785,7 @@ p {
 #contatti {
     padding: 50px 70px;
     background-color: var(--color3);
+    z-index: 999999999999999999999999999999999;
 }
 
 #contatti h2 {
