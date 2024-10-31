@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-
 * {
     text-decoration: none;
     list-style: none;
@@ -191,29 +190,6 @@ p {
     color: var(--color2);
 }
 
-.wave {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave svg {
-    z-index: 11122222;
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 125px;
-}
-
-.wave .shape-fill {
-    fill: #272424;
-}
-
-
-
 /*  --------------------------------- HOME ------------------------- */
 #home {
     display: flex;
@@ -322,6 +298,32 @@ p {
     /* height: auto;
     max-width: 400px; */
 }
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    width: 99.9%;
+    height: auto;
+}
+
+.wave svg {
+    /* z-index: 11122222; */
+    position: relative;
+    display: block;
+    /* width: calc(100% + 1.3px); */
+    width: 99.99%;
+    height: 125px;
+    overflow: hidden;
+}
+
+.wave .shape-fill {
+    fill: #272424;
+}
+
 
 /* ------------------------------------------------- CHI SIAMO --------------------------------------- */
 #info {
@@ -474,6 +476,7 @@ p {
     overflow: hidden;
     line-height: 0;
 }
+
 .wave-3 svg {
     position: relative;
     display: block;
