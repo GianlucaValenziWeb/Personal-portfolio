@@ -49,7 +49,7 @@ p {
 #header {
     width: 100%;
     background-color: transparent;
-    padding: 12px 20px;
+    padding: 12px 70px;
     /* regolare padding  */
     position: fixed;
     top: 0;
@@ -98,7 +98,11 @@ p {
 }
 
 .menu li {
-    padding-left: 30px;
+    padding-left: 15px;
+}
+
+.menu li:last-child {
+    padding-left: 0;
 }
 
 .menu li a {
@@ -137,7 +141,7 @@ p {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: none;
 }
 
@@ -187,24 +191,24 @@ p {
     color: var(--color2);
 }
 
-.custom-shape-divider-bottom-1730197170 {
+.wave {
     position: absolute;
     bottom: 0px;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    /* z-index: 111111111444444444444444444444444444444444444444444444; */
 }
 
-.custom-shape-divider-bottom-1730197170 svg {
+.wave svg {
+    z-index: 11122222;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 125px;
 }
 
-.custom-shape-divider-bottom-1730197170 .shape-fill {
+.wave .shape-fill {
     fill: #272424;
 }
 
@@ -215,7 +219,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 70px;
+    padding: 100px 70px;
     /* con 100 vh padding verticale inutile */
     /* background-image: url(images/dian7.jpg);
     background-size: cover; */
@@ -295,24 +299,28 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: auto;
 }
 
 .image-container svg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: auto;
+    /* width: 100%;
+    height: 100%; */
     z-index: -1;
 }
 
 .image-container img {
     position: relative;
     z-index: 1;
-    height: auto;
-    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    /* height: auto;
+    max-width: 400px; */
 }
 
 /* ------------------------------------------------- CHI SIAMO --------------------------------------- */
@@ -393,7 +401,6 @@ p {
     padding: 60px 70px;
 }
 
-/* 
 #servizi h2 {
     text-align: center;
     color: var(--color2);
@@ -406,25 +413,27 @@ p {
     padding-bottom: 40px;
 }
 
+.container-servizi,
+.container-promo {
+    margin: 0 auto;
+    padding: 20px 70px;
+}
+
+/* Impostazioni generali per la sezione dei servizi */
 .container-tab {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
-    row-gap: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
 .container-tab .tab {
+    flex: 1 1 30%;
+    min-width: 250px;
     background-color: var(--color3);
-    width: auto;
-    height: 100%;
     padding: 18px;
     border-radius: 20px;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     border: 2px solid #fff;
     box-shadow: 0 0 8px var(--color2);
@@ -434,7 +443,6 @@ p {
 .tab:hover {
     transform: scale(1.05);
     box-shadow: 0 0 14px var(--color2);
-
 }
 
 .tab-icon {
@@ -450,6 +458,7 @@ p {
 
 .tab h3 {
     color: var(--color2);
+    text-align: center;
 }
 
 .tab p {
@@ -465,7 +474,6 @@ p {
     overflow: hidden;
     line-height: 0;
 }
-
 .wave-3 svg {
     position: relative;
     display: block;
@@ -475,117 +483,11 @@ p {
 
 .wave-3 .shape-fill {
     fill: #424242;
+    z-index: 11122222;
 }
 
 .container-promo {
     background-color: #424242;
-    padding: 50px 70px;
-}
-
-.pagina-responsive {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 40px;
-}
-
-.pagina-responsive .testo {
-    flex: 1;
-    max-width: 50%;
-    padding: 0 40px;
-}
-
-.pagina-responsive h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: var(--color2) !important;
-    font-style: italic;
-    font-size: 2.2rem;
-}
-
-#p-primo {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #61c0ff, #64cbff);
-    background-clip: inherit;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.pagina-responsive p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.pagina-responsive .responsive-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--color3);
-    border-radius: 10px;
-}
-
-.responsive-img:hover {
-    transform: scale(1.05);
-}
-
-.pagina-responsive .responsive-img img {
-    max-width: 100%;
-    height: auto;
-} */
-.container-servizi,
-.container-promo {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Titoli e testo centrato */
-h2,
-#p-servizi {
-    text-align: center;
-}
-
-/* Impostazioni generali per la sezione dei servizi */
-.container-tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.tab {
-    flex: 1 1 30%;
-    min-width: 250px;
-    background: #f7f7f7;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.tab-icon {
-    font-size: 40px;
-    color: #72B6FF;
-    margin-bottom: 10px;
-}
-
-.tab h3 {
-    margin: 10px 0;
-}
-
-.tab p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Wave styling for responsiveness */
-.wave-3 svg {
-    width: 100%;
-    height: auto;
 }
 
 /* Layout per sezione promo */
@@ -597,68 +499,57 @@ h2,
     gap: 20px;
     margin: 40px 0;
     padding: 20px;
-    background-color: #f1f8ff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: var(--color3);
+    border-radius: 10px; */
 }
 
-.testo {
+.pagina-responsive .testo {
+    /* flex: 1;
+    max-width: 50%;
+    padding: 0 40px; */
     flex: 1 1 50%;
 }
 
-.responsive-img {
+.pagina-responsive h2 {
+    margin-bottom: 10px;
+    color: var(--color2) !important;
+    font-style: italic;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#p-primo {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #61c0ff, #64cbff);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pagina-responsive p {
+    line-height: 1.6;
+}
+
+.pagina-responsive .responsive-img {
+    /* background-color: var(--color3); */
     flex: 1 1 40%;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.responsive-img:hover {
+    transform: scale(1.05);
 }
 
 .responsive-img img {
     width: 100%;
     height: auto;
     max-width: 400px;
-    border-radius: 8px;
-}
-
-/* Media Queries per Responsiveness */
-@media (max-width: 768px) {
-    .container-tab {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tab {
-        width: 100%;
-    }
-
-    .pagina-responsive {
-        flex-direction: column;
-    }
-
-    .responsive-img {
-        width: 100%;
-        max-width: none;
-    }
-
-    .testo {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-
-    h2,
-    #p-servizi,
-    #p-primo {
-        font-size: 1.5rem;
-    }
-
-    .tab p,
-    .testo p {
-        font-size: 0.9rem;
-    }
-
-    .tab-icon {
-        font-size: 35px;
-    }
 }
 
 /*  ---------------------------------------- COMPETENZE --------------------------------- */
@@ -770,6 +661,7 @@ h2,
 /* Sezione Lavori */
 #lavori {
     background-color: var(--color4);
+    /* background-color: var(--color4); */
     color: var(--color1);
     padding: 50px 70px;
     text-align: center;
@@ -877,6 +769,7 @@ h2,
 }
 
 .wave-2 svg {
+    z-index: 11122222;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
