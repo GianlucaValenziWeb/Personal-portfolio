@@ -350,6 +350,7 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
+    overflow: hidden;
 }
 
 .foto-container {
@@ -439,7 +440,15 @@ p {
     overflow: hidden;
     border: 2px solid #fff;
     box-shadow: 0 0 8px var(--color2);
-    transition: transform .4s;
+    /* transition: transform .4s; */
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    opacity: 0;
+}
+
+.tab.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .tab:hover {
@@ -505,6 +514,7 @@ p {
     padding: 20px;
     /* background-color: var(--color3);
     border-radius: 10px; */
+    overflow: hidden;
 }
 
 .pagina-responsive .testo {
@@ -543,10 +553,10 @@ p {
     /* background-color: var(--color3); */
     flex: 1 1 40%;
     text-align: center;
-    transition: transform 0.3s ease;
 }
 
 .responsive-img:hover {
+    transition: transform 0.3s ease;
     transform: scale(1.05);
 }
 
@@ -563,6 +573,7 @@ p {
     gap: 20px;
     padding: 50px 70px;
     background-color: var(--color3);
+    overflow: hidden;
 }
 
 .testa-competenze {
@@ -670,6 +681,8 @@ p {
     padding: 50px 70px;
     text-align: center;
     position: relative;
+    overflow: hidden;
+
 }
 
 #lavori h2 {
@@ -789,6 +802,7 @@ p {
     padding: 50px 70px;
     background-color: var(--color3);
     z-index: 999999999999999999999999999999999;
+    overflow: hidden;
 }
 
 #contatti h2 {
