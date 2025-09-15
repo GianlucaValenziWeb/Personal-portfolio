@@ -586,14 +586,15 @@
     }
 
     .hero-content .question {
-        font-size: 1.1rem !important;
+        font-size: 0.9rem !important;
     }
 
     .hero-content h1 {
         width: 100%;
-        font-size: 2.1rem !important;
-        line-height: 42px !important;
+        font-size: 1.83rem !important;
+        line-height: 35px !important;
         margin-bottom: 20px;
+        word-spacing: -2px;
     }
 
     .hero-content .comment {
