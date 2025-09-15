@@ -1,93 +1,59 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var navLinks = document.querySelectorAll('.nav-link');
-    var check = document.getElementById('check');
-    var backToHome = document.querySelector('.arrow-up');
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
 
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-            check.checked = false;
-        });
-    });
-
-    // Aggiunge/rimuove la classe 'active' ai link di navigazione in base alla sezione visibile
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                navLinks.forEach(function (link) {
-                    link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
-                });
-            }
-        });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('section').forEach(function (section) {
-        observer.observe(section);
-    });
-
-    // Freccetta su 
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > window.innerHeight) {
-            backToHome.style.display = 'block';
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
         } else {
-            backToHome.style.display = 'none';
-        }
-    });
-
-    // Aggiungi scroll fluido alla freccia
-    backToHome.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Scorrimento fluido
-        });
-    });
-});
-
-// effetti pagine
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show-items");
-        } else {
-            entry.target.classList.remove("show-items");
+            navbar.classList.remove("scrolled");
         }
     });
 });
 
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el) => observer.observe(el));
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.querySelector(".navbar"); // seleziona la tua navbar
+    const tocLinks = document.querySelectorAll("#table-of-contents a");
 
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el) => observer.observe(el));
+    // Quando clicco un link dell’indice
+    tocLinks.forEach(link => {
+        link.addEventListener("click", e => {
+            // Nascondi navbar subito
+            navbar.classList.add("hidden-nav");
 
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el) => observer.observe(el));
-
-const scrollLeft = document.querySelectorAll(".scroll-left");
-scrollLeft.forEach((el) => observer.observe(el));
-
-const scrollRight = document.querySelectorAll(".scroll-right");
-scrollRight.forEach((el) => observer.observe(el));
-
-/* FINE EFFETTI PAGINE */
-
-
-// Foto Gallery
-document.addEventListener('DOMContentLoaded', function () {
-    const item = document.querySelectorAll('.tab');
-
-    const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');  // Aggiunge la classe quando il box è visibile
-            } else {
-                entry.target.classList.remove('visible');  // Rimuove la classe quando il box esce dal viewport
-            }
+            // Dopo che la pagina ha scrollato al paragrafo
+            setTimeout(() => {
+                // Appena l’utente inizia a scorrere di nuovo, riappare
+                const onScroll = () => {
+                    navbar.classList.remove("hidden-nav");
+                    window.removeEventListener("scroll", onScroll);
+                };
+                window.addEventListener("scroll", onScroll);
+            }, 1000); // tempo per lo scroll automatico
         });
-    }, { threshold: 0.2 });
-
-    item.forEach(function (box) {
-        observer.observe(box);
     });
 });
-/* FINE FOTO GALLERY */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // chiude il menu cliccando un link
+    const check = document.getElementById('check');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (check) check.checked = false;
+        });
+    });
+});
+
+
+
+
+const checkbox = document.getElementById("check");
+
+checkbox.addEventListener("change", function () {
+    if (this.checked) {
+        document.body.classList.add("no-scroll");  // blocca scroll
+    } else {
+        document.body.classList.remove("no-scroll"); // sblocca scroll
+    }
+});
