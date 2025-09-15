@@ -14,6 +14,7 @@
     --color2: #017d5c;
     --color1: #121212;
     --border-radius: 15px;
+    --transition: all .3s ease;
 }
 
 b {
@@ -59,6 +60,11 @@ p {
     border: none;
     background-color: var(--color2);
     color: #fff;
+    transition: var(--transition);
+}
+
+.btn-contact:hover {
+    background-color: #01644a;
 }
 
 .btn-more {
@@ -72,8 +78,8 @@ p {
     border: 3px solid var(--color2);
     background-color: transparent;
     color: var(--color2) !important;
+    transition: var(--transition);
 }
-
 
 /* ------------------------------------------------- HEADER ---------------------------------------------- */
 header {
@@ -136,10 +142,11 @@ header {
 
 .navbar-center a {
     color: var(--navcolor);
+    transition: var(--transition);
 }
 
 .navbar-center a:hover {
-    color: #000;
+    color: var(--color2);
 }
 
 .navbar-right .contact:hover {
@@ -260,6 +267,11 @@ body.no-scroll {
 
 .btn-home {
     border: 3px solid var(--color2);
+    transition: var(--transition)
+}
+
+.btn-home:hover {
+    border: 3px solid #01644a;
 }
 
 .home-reviews {
@@ -637,6 +649,12 @@ body.no-scroll {
     color: #000 !important;
     background-color: transparent !important;
     text-decoration: underline;
+    transition: var(--transition);
+}
+
+.btn-portfolio:hover {
+    text-decoration-color: var(--color2);
+    color: var(--color2) !important;
 }
 
 /* ------------------------------------------- RECENSIONI ---------------------------------- */
@@ -864,10 +882,11 @@ footer {
 .footer-column ul li a {
     color: #555;
     font-size: 1rem;
+    transition: var(--transition);
 }
 
 .footer-column ul li a:hover {
-    text-decoration: underline;
+    color: var(--color2);
 }
 
 .footer-contact-column {
@@ -886,20 +905,24 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
-    color: #777;
     margin-top: 30px;
 }
 
+.footer-bottom span {
+    font-size: 0.9rem;
+    color: var(--color1);
+}
+
 .footer-bottom a {
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
-    color: #555;
-    font-size: 1rem;
+    color: var(--color1);
+    font-size: 0.9rem;
+    transition: var(--transition);
 }
 
 .footer-bottom a:hover {
-    text-decoration: underline;
+    color: var(--color2);
 }
 
 .container-logo-footer {
@@ -908,6 +931,7 @@ footer {
     align-items: center;
     margin-bottom: 70px;
     gap: 5px;
+
 }
 
 .container-logo-footer img {
@@ -1141,6 +1165,11 @@ footer {
 .container-portfolio-hero .container-content .link a {
     text-decoration: underline;
     color: #262626 !important;
+    transition: var(--transition);
+}
+
+.container-portfolio-hero .container-content .link a:hover {
+    color: var(--color2) !important;
 }
 
 .container-portfolio-hero .container-img img {
@@ -1208,4 +1237,88 @@ footer {
 
 #gps {
     border: 1px solid #ddd;
+}
+
+
+#contact-page {
+    padding: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Colonna info */
+.contact-info {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contact-info h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2.2rem !important;
+    /* margin-bottom: 20px; */
+}
+
+.contact-box {
+    border: 1px solid #ddd;
+    color: var(--color1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-box:hover {
+    border: 1px solid #444444;
+}
+
+.contact-box i {
+    font-size: 40px;
+    display: block;
+    color: var(--color2);
+}
+
+.contact-box h3 {
+    margin: 10px 0;
+}
+
+/* Colonna form */
+.contact-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 0 !important;
+}
+
+.contact-content h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2.2rem !important;
+}
+
+.contact-content input {
+    height: 60px;
+}
+
+.contact-content textarea {
+    height: 252px;
+}
+
+.contact-content input,
+.contact-content textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.9rem;
+
+}
+
+.contact-content button:hover {
+    background: #555;
 }
