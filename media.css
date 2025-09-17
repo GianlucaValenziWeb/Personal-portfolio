@@ -593,7 +593,7 @@
     }
 
     .hero-content .question {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
 
     .hero-content h1 {
@@ -621,7 +621,7 @@
         width: 100%;
     }
 
-    .home-reviews .review {
+    .home-reviews .review q {
         font-size: 0.8rem;
     }
 
