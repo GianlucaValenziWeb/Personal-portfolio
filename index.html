@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gianluca Valenzi</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon-gianluca-valenzi.png">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="media.css">
 </head>
@@ -17,7 +17,8 @@
 
         <div class="navbar-left">
             <a href="index.html">
-                <img src="images/favicon.png" alt="" height="100%" width="45px">
+                <img src="images/logo-gianluca-valenzi.png" alt="logo Gianluca Valenzi" height="100%" width="45px"
+                    loading="eager" decoding="sync">
             </a>
         </div>
 
@@ -55,11 +56,12 @@
     <section id="home">
         <div class="hero">
             <div class="hero-content">
-                <div class="question"><strong>Gianluca Valenzi - Realizzazione Siti Web</strong></div>
+                <div class="question"><strong>Realizzazione Siti Web Personalizzati</strong></div>
                 <h1 class="title-hero">Aiuto piccole attività a raccontare la loro storia online
                 </h1>
                 <p class="comment">
-                    <strong>Realizzo siti web</strong> che raccontano la tua storia e valorizzano la
+                    Ciao, sono <strong>Gianluca Valenzi e realizzo siti web</strong> che raccontano la tua
+                    storia e valorizzano la
                     tua attività. Ti aiuto a far conoscere ciò che fai ai <strong>clienti ideali</strong>, seguendoti in
                     ogni fase del
                     processo.
@@ -70,18 +72,33 @@
                 </div>
                 <div class="home-reviews">
                     <div class="user-container">
-                        <div class="user"><img src="images/matteo-fiorentini-user.png" alt=""></div>
-                        <div class="user"><img src="images/ciro-barbiere-titolare-user.png" alt=""></div>
-                        <div class="user"><img src="images/andrea-giuliani-user.png" alt=""></div>
+                        <figure class="user">
+                            <img src="images/matteo-fiorentini-user.jpg"
+                                alt="matteo fiorentini, recensione per gianluca valenzi" loading="eager"
+                                decoding="sync">
+                        </figure>
+                        <figure class="user">
+                            <img src="images/ciro-barbiere-titolare-user.jpg"
+                                alt="forever barber, recensione per gianluca valenzi" loading="eager" decoding="sync">
+                        </figure>
+                        <figure class="user">
+                            <img src="images/andrea-giuliani-user.jpg"
+                                alt="club sport roma, recensione per gianluca valenzi" loading="eager" decoding="sync">
+                        </figure>
                     </div>
-                    <div class="review">
-                        " Gianluca è un grande professionista... "
-                    </div>
+                    <figcaption class="review">
+                        <q> ... Gianluca è un grande professionista! </q>
+                    </figcaption>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/avatar.png" alt="" class="personal-img">
-            </div>
+            <figure class="hero-image">
+                <img src="images/avatar.png" alt="illustrazione di Gianluca Valenzi al computer" class="personal-img"
+                    loading="eager" decoding="sync" fetchpriority="high">
+                <figcaption class="avatar-caption">
+                    <strong>Gianluca Valenzi</strong><br>
+                    <strong id="role">Web Designer & Sviluppatore Web</strong>
+                </figcaption>
+            </figure>
         </div>
     </section>
 
@@ -89,20 +106,20 @@
         <div class="container-break">
             <div class="break-box">
                 <i class='bxr  bx-globe-alt'></i>
-                <h3>Presenza online</h3>
+                <div class="break-box-title">Presenza online</div>
                 <p class="p-box">
                     Con me puoi portare la tua attività sul web con un sito semplice e professionale.</p>
             </div>
             <div class="break-box">
                 <i class='bxr  bx-user-plus'></i>
-                <h3>Contatti di qualità</h3>
+                <div class="break-box-title">Contatti di qualità</div>
                 <p class="p-box">Realizzo un sito pensato per attirare le persone giuste, trasformando <br> le visite in
                     contatti</p>
 
             </div>
             <div class="break-box">
                 <i class="bxr bx-chart-line "></i>
-                <h3>Risultati concreti</h3>
+                <div class="break-box-title">Risultati concreti</div>
                 <p class="p-box">Il sito che creo per te diventa uno strumento di crescita: richieste, <br> clienti e
                     opportunità.</p>
             </div>
@@ -112,12 +129,14 @@
     <section id="profile">
         <div class="profile-section">
             <!-- img -->
-            <div class="container-img">
-                <div class="profile-image">
+            <figure class="container-img">
+                <picture class="profile-image">
+                    <source srcset="images/e-se-i-tuoi-clienti-non-ti-trovano-online-500px.jpg"
+                        media="(max-width: 450px)">
                     <img src="images/e-se-i-tuoi-clienti-non-ti-trovano-online.jpg"
-                        alt="matteo fiorentini fisioterapista a roma" loading="eager" decoding="sync">
-                </div>
-            </div>
+                        alt="cosa succede se i tuoi clienti non ti trovano online" loading="lazy" decoding="async">
+                </picture>
+            </figure>
             <!-- text -->
             <div class="profile-text">
                 <h2 class="title">E se i tuoi clienti non ti trovano online?</h2>
@@ -151,19 +170,23 @@
             </div>
 
             <!-- img -->
-            <div class="container-img">
-                <div class="profile-image" id="profile-image-dx">
-                    <img src="images/hai-speso-tanto-per-un-sito-che-non-porta-clienti.jpg"
-                        alt="fiorentini matteo osteopata frosinone calcio" loading="lazy" decoding="async">
-                </div>
-            </div>
+            <figure class="container-img">
+                <picture class="profile-image" id="profile-image-dx">
+                    <source srcset="images/hai-speso-tanto-per-un-sito-che-non-porta-clienti-500px.jpg"
+                        media="(max-width: 450px)">
+                    <img src="images/hai-speso-tanto-per-un-sito-che-non-porta-clienti.jpg" alt="" loading="lazy"
+                        decoding="async">
+                </picture>
+            </figure>
+
         </div>
 
     </section>
 
     <div id="break-chisono">
         <div class="container-break-profile">
-            <img src="images/gianluca-valenzi.png" alt="">
+            <img src="images/gianluca-valenzi.png" alt="gianluca valenzi realizzazione siti web" loading="lazy"
+                decoding="async">
 
             <div class="container-text">
                 <h2>Conosciamoci meglio!</h2>
@@ -272,10 +295,13 @@
 
     <section id="break-focus">
         <div class="container-break-focus">
-            <div class="container-break-img">
-                <img src="images/ottieni-un-sito-web-che-lavora-per-te.jpg" alt="">
+            <picture class="container-break-img">
+                <source srcset="images/images/ottieni-un-sito-web-che-lavora-per-te-500px.jpg"
+                    media="(max-width: 450px)">
+                <img src="images/ottieni-un-sito-web-che-lavora-per-te.jpg" alt="grafico di un sito web in crescita"
+                    loading="lazy" decoding="async">
+            </picture>
 
-            </div>
             <div class="container-break-text">
                 <h2>Ottieni un sito che lavora per te</h2>
 
@@ -298,7 +324,12 @@
 
         <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="images/forverbarber-portfolio.png" alt="">
+                <picture>
+                    <source srcset="images/images/forverbarber-portfolio-500px.jpg" media="(max-width: 450px)">
+                    <img src="images/forverbarber-portfolio.jpg" alt="sito realizzato per forever barber" loading="lazy"
+                        decoding="async">
+                </picture>
+
                 <div class="pre-title-project">Salone di barberia</div>
                 <h3>www.foreverbarber.it</h3>
                 <p class="p-box">Una barberia artigianale nel cuore di Roma, guidata da Ciro, barbiere con oltre 10 anni
@@ -308,7 +339,11 @@
                 <a href="foreverbarber.html" class="btn-portfolio btn-contact">vai al sito</a>
             </div>
             <div class="portfolio-box">
-                <img src="images/osteofisiorehab-portfolio.png" alt="">
+                <picture>
+                    <source srcset="images/images/osteofisiorehab-portfolio-500px.jpg" media="(max-width: 450px)">
+                    <img src="images/osteofisiorehab-portfolio.jpg" alt="sito realizzato per osteofisio rehab"
+                        loading="lazy" decoding="async">
+                </picture>
                 <div class="pre-title-project">Centro fisioterapico</div>
                 <h3>www.osteofisiorehab.it</h3>
                 <p class="p-box">Matteo Fiorentini è un fisioterapista e osteopata, con una carriera di alto livello che
@@ -317,7 +352,11 @@
                 <a href="osteofisiorehab.html" class="btn-portfolio btn-contact">vai al sito</a>
             </div>
             <div class="portfolio-box">
-                <img src="images/clubsportroma-portfolio.png" alt="">
+                <picture>
+                    <source srcset="images/images/clubsportroma-portfolio-500px.jpg" media="(max-width: 450px)">
+                    <img src="images/clubsportroma-portfolio.jpg" alt="sito realizzato per osteofisio rehab"
+                        loading="lazy" decoding="async">
+                </picture>
                 <div class="pre-title-project">Società calcistica</div>
                 <h3>www.clubsportroma.it</h3>
                 <p class="p-box">Un’importante realtà sportiva dilettantistica con oltre 180 tesserati. Una società che
@@ -337,7 +376,13 @@
         <div class="reviews-content">
             <div class="reviews-box">
                 <div class="reviews-img">
-                    <img src="images/ciro-barbiere-titolare.png" alt="">
+                    <picture>
+                        <source srcset="images/ciro-barbiere-titolare-500px.jpg" media="(max-width: 450px)">
+                        <img src="images/ciro-barbiere-titolare.jpg"
+                            alt="recensione di forever barber per Gianluca valenzi Realizzazione siti web"
+                            loading="lazy" decoding="async">
+                    </picture>
+
                     <div class="reviews-text">
                         <div class="pre-title-review">Ciro</div>
                         <h3>www.foreverbarber.it</h3>
@@ -352,7 +397,12 @@
             </div>
             <div class="reviews-box">
                 <div class="reviews-img">
-                    <img src="images/matteo-fiorentini.png" alt="">
+                    <picture>
+                        <source srcset="images/matteo-fiorentini-500px.jpg" media="(max-width: 450px)">
+                        <img src="images/matteo-fiorentini.jpg"
+                            alt="recensione di matteo fiorentini per Gianluca valenzi Realizzazione siti web"
+                            loading="lazy" decoding="async">
+                    </picture>
 
                     <div class="reviews-text">
                         <div class="pre-title-review">Matteo Fiorentini</div>
@@ -368,7 +418,13 @@
             </div>
             <div class="reviews-box">
                 <div class="reviews-img">
-                    <img src="images/andrea-giuliani.png" alt="">
+                    <picture>
+                        <source srcset="images/andrea-giuliani-500px.jpg" media="(max-width: 450px)">
+                        <img src="images/andrea-giuliani.jpg"
+                            alt="recensione di andrea giuliani per Gianluca valenzi Realizzazione siti web"
+                            loading="lazy" decoding="async">
+                    </picture>
+
 
                     <div class="reviews-text">
                         <div class="pre-title-review">Andrea Giuliani</div>
@@ -528,8 +584,8 @@
         </div>
 
         <form class="contact-content" id="contactForm">
-            <input type="text" name="name" placeholder="Nome" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="name" autocomplete="on" placeholder="Nome" required>
+            <input type="email" name="email" autocomplete="on" placeholder="Email" required>
             <textarea name="message" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
             <button type="submit" class="btn-contact">invia</button>
         </form>
@@ -547,7 +603,7 @@
     <!-- ====== FOOTER ====== -->
     <footer>
         <a href="index.html" class="container-logo-footer">
-            <img src="images/favicon.png" alt="" srcset="">
+            <img src="images/logo-gianluca-valenzi.png" alt="logo di valenzi gianluca" loading="lazy" decoding="async">
             <div class="container-text-footer">
                 <span>Gianluca Valenzi</span>
                 <div>Realizzazione siti web</div>

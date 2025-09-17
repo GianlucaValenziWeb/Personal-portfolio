@@ -57,3 +57,5 @@ checkbox.addEventListener("change", function () {
         document.body.classList.remove("no-scroll"); // sblocca scroll
     }
 });
+
+
